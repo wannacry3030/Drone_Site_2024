@@ -67,3 +67,24 @@ footer {
   padding: 16px 32px;
   font-size: 18px;
 }
+
+/* FEATURES */
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+.features-icon {
+  color: #087;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 23px;
+}
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.features-text {
+  font-size: 18px;
+  line-height: 1.7;
+}

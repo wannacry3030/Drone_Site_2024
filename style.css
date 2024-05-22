@@ -1,0 +1,24 @@
+img {
+  width: 100%;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.caixa-header {
+  align-self: center;
+}
+.texto-header {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.btn:link,
+.btn:visited {
+  background-color: #fff;
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 100px;
+}

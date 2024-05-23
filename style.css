@@ -7,6 +7,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   border-bottom: 8px solid #969696;
+  background: #e0e0e0;
 }
 h1 {
   margin-bottom: 32px;
@@ -204,4 +205,42 @@ footer {
 .prev-button:focus,
 .next-button:focus {
   outline: 2px solid #fff;
+}
+/* ITEMS  */
+.items {
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.items img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.item-box {
+  padding: 32px;
+}
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.item-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+.item-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.item-details li :last-child {
+  margin-bottom: 0;
+}
+.item-icon {
+}
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
 }

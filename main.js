@@ -1,5 +1,5 @@
 const carouselContainer = document.querySelector(".car-container");
-const carouselSlide = document.querySelectorAll(".carousel-slide");
+const carouselSlide = document.querySelectorAll(".car-slide");
 const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
 const indicators = document.querySelectorAll(".indicator");

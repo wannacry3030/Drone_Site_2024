@@ -1,3 +1,4 @@
+/* CORES: #001f3f #e0e0e0 */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  color: #343a40;
+  color: #001f3f;
   border-bottom: 8px solid #969696;
   background: #e0e0e0;
 }
@@ -37,7 +38,7 @@ img {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
-  color: #969696;
+  color: #001f3f;
 }
 /* HEADER  */
 .container {
@@ -56,7 +57,7 @@ footer {
 .btn:visited {
   background-color: #c7c7c7;
   text-decoration: none;
-  color: #333;
+  color: #001f3f;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 100px;
@@ -76,7 +77,7 @@ footer {
   column-gap: 80px;
 }
 .features-icon {
-  color: #969696;
+  color: #001f3f;
   width: 32px;
   height: 32px;
   margin-bottom: 23px;
@@ -117,11 +118,11 @@ footer {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
-  color: #343a40;
+  color: #001f3f;
   text-align: space;
 }
 .testimonial-author {
-  color: #343a40;
+  color: #001f3f;
   text-align: center;
 }
 /* CAROULSEL SLIDE  */
@@ -237,6 +238,8 @@ h3 {
   margin-bottom: 0;
 }
 .item-icon {
+  width: 24px;
+  height: 24px;
 }
 .item-price {
   display: flex;

@@ -38,6 +38,7 @@ footer {
   font-size: 14px;
   color: #969696;
 }
+/* HEADER  */
 .container {
   width: 960px;
   margin: 0 auto;
@@ -67,7 +68,6 @@ footer {
   padding: 16px 32px;
   font-size: 18px;
 }
-
 /* FEATURES */
 .grid-3-cols {
   display: grid;
@@ -87,4 +87,118 @@ footer {
 .features-text {
   font-size: 18px;
   line-height: 1.7;
+}
+/* CAROULSEL CONTAINER */
+.car-container {
+  position: relative;
+  overflow: hidden;
+  width: 960px;
+  height: 400px;
+  min-height: 400px;
+}
+.testimonial-section {
+  background-color: #969696;
+  color: #343a40;
+  padding: 24px;
+  border-radius: 12px;
+}
+.testimonial-box {
+  grid-column: 2/-1;
+  align-self: center;
+}
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #343a40;
+  text-align: space;
+}
+.testimonial-author {
+  color: #343a40;
+  text-align: center;
+}
+/* CAROULSEL SLIDE  */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #555;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  pointer-events: none;
+}
+
+.prev-button,
+.next-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  pointer-events: all;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button:focus,
+.next-button:focus {
+  outline: 2px solid #fff;
 }

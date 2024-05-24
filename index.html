@@ -61,96 +61,35 @@
       </section>
 
       <!-- testimonial -->
-      <div class="car-container">
-        <!-- slide do carousel -->
-        <div class="car-slide active">
-          <section class="testimonial-section">
-            <div class="grid-3-cols">
-              <img src="assets/testimonial1.jpg" alt="placeholder alt" />
-              <div class="testimonial-box">
-                <h2>frase de efeito ok</h2>
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate exercitationem at id itaque aliquam ipsa dolor, in
-                  optio tempora odit nobis velit vitae! Fugit provident possimus
-                  ipsa, rem magnam aperiam?
-                </blockquote>
-                <p class="testimonial-author">&mdash; nome dos auutores</p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- slide do carousel 2-->
-        <div class="car-slide">
-          <section class="testimonial-section">
-            <div class="grid-3-cols">
-              <img src="assets/testimonial1.jpg" alt="placeholder alt" />
-              <div class="testimonial-box">
-                <h2>frase de efeito ok 2</h2>
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate exercitationem at id itaque aliquam ipsa dolor, in
-                  optio tempora odit nobis velit vitae! Fugit provident possimus
-                  ipsa, rem magnam aperiam?
-                </blockquote>
-                <p class="testimonial-author">&mdash; nome dos auutores</p>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- slide do carousel 3-->
-        <div class="car-slide">
-          <section class="testimonial-section">
-            <div class="grid-3-cols">
-              <img src="assets/testimonial1.jpg" alt="placeholder alt" />
-              <div class="testimonial-box">
-                <h2>frase de efeito ok 3</h2>
-                <blockquote class="testimonial-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cupiditate exercitationem at id itaque aliquam ipsa dolor, in
-                  optio tempora odit nobis velit vitae! Fugit provident possimus
-                  ipsa, rem magnam aperiam?
-                </blockquote>
-                <p class="testimonial-author">&mdash; nome dos auutores</p>
-              </div>
-            </div>
-          </section>
-        </div>
 
-        <!-- Indicadores de slide -->
-        <div class="carousel-indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-        </div>
-
-        <!-- Botões de controle -->
-        <div class="carousel-controls">
-          <button class="prev-button">&#10094;</button>
-          <button class="next-button">&#10095;</button>
-        </div>
-      </div>
-
-      <div>
-        <img />
-        <blockquote>
-          <p>
+      <div class="carousel">
+        <img
+          src="assets/maria.jpg"
+          alt="maria de almeida"
+          class="carousel-image"
+        />
+        <blockquote class="testimonial">
+          <p class="testimonial-text">
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
             nemo at numquam aperiam commodi inventore doloremque, deserunt
             deleniti ipsam." "Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Corporis nemo at numquam aperiam commodi inventore
             doloremque, deserunt deleniti ipsam."
           </p>
-          <p>Maria de Almeida</p>
-          <p>Senior Product Manager at EDP Comercial</p>
+          <p class="testimonial-author">Maria de Almeida</p>
+          <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
         </blockquote>
-        <button><ion-icon name="caret-back-outline"></ion-icon></button>
-        <button><ion-icon name="caret-forward"></ion-icon></button>
-        <div>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+        <button class="btn btn--left">
+          <ion-icon class="btn-icon" name="caret-back-outline"></ion-icon>
+        </button>
+        <button class="btn btn--right">
+          <ion-icon class="btn-icon" name="caret-forward"></ion-icon>
+        </button>
+        <div class="dots">
+          <button class="dot dot--fill" data-index="0">&nbsp;</button>
+          <button class="dot" data-index="1">&nbsp;</button>
+          <button class="dot" data-index="2">&nbsp;</button>
+          <button class="dot" data-index="3">&nbsp;</button>
         </div>
       </div>
 

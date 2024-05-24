@@ -248,3 +248,37 @@ h3 {
   font-size: 20px;
   align-items: center;
 }
+/* ACCORDION  */
+.accordion {
+  line-height: 1;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item {
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+  cursor: pointer;
+}
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+}
+.number {
+  color: #a1a1a1;
+}
+.icon {
+  width: 24px;
+  height: 23px;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}

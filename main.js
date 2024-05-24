@@ -1,46 +1,84 @@
-const carouselContainer = document.querySelector(".car-container");
-const carouselSlide = document.querySelectorAll(".car-slide");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
-const indicators = document.querySelectorAll(".indicator");
+const images = [
+  "assets/maria.jpg",
+  "assets/maria.jpg",
+  "assets/maria.jpg",
+  "assets/maria.jpg",
+];
+const testimonials = [
+  {
+    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nemo at numquam aperiam commodi inventore doloremque, deserunt deleniti ipsam.",
+    author: "Maria de Almeida",
+    job: "Senior Product Manager at EDP Comercial",
+  },
+  {
+    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    author: "João da Silva",
+    job: "Software Engineer at ABC Tech",
+  },
+  {
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    author: "Ana Pereira",
+    job: "Graphic Designer at XYZ Studio",
+  },
+  {
+    text: "Sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
+    author: "Carlos Souza",
+    job: "Marketing Specialist at DEF Corp",
+  },
+];
 
 let currentIndex = 0;
+let interval;
 
-function updateCarousel() {
-  carouselSlide.forEach((slide, index) => {
-    if (index === currentIndex) {
-      slide.classList.add("active");
-      indicators[index].classList.add("active");
-    } else {
-      slide.classList.remove("active");
-      indicators[index].classList.remove("active");
-    }
+const imageElement = document.querySelector(".carousel-image");
+const textElement = document.querySelector(".testimonial-text");
+const authorElement = document.querySelector(".testimonial-author");
+const jobElement = document.querySelector(".testimonial-job");
+const dots = document.querySelectorAll(".dot");
+
+function updateCarousel(index) {
+  imageElement.src = images[index];
+  textElement.textContent = testimonials[index].text;
+  authorElement.textContent = testimonials[index].author;
+  jobElement.textContent = testimonials[index].job;
+
+  dots.forEach((dot) => dot.classList.remove("dot--fill"));
+  dots[index].classList.add("dot--fill");
+}
+
+function startAutoSlide() {
+  interval = setInterval(() => {
+    currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    updateCarousel(currentIndex);
+  }, 5000); // Muda de slide a cada 3 segundos
+}
+
+function stopAutoSlide() {
+  clearInterval(interval);
+}
+
+document.querySelector(".btn--left").addEventListener("click", () => {
+  currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+  updateCarousel(currentIndex);
+  stopAutoSlide();
+  startAutoSlide();
+});
+
+document.querySelector(".btn--right").addEventListener("click", () => {
+  currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+  updateCarousel(currentIndex);
+  stopAutoSlide();
+  startAutoSlide();
+});
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", (e) => {
+    currentIndex = parseInt(e.target.dataset.index);
+    updateCarousel(currentIndex);
+    stopAutoSlide();
+    startAutoSlide();
   });
-}
+});
 
-function nextSlide() {
-  currentIndex++;
-  if (currentIndex >= carouselSlide.length) {
-    currentIndex = 0;
-  }
-  updateCarousel();
-}
-
-function prevSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = carouselSlide.length - 1;
-  }
-  updateCarousel();
-}
-
-function autoSlide() {
-  nextSlide();
-}
-
-// Event listeners para os botões de controle
-prevButton.addEventListener("click", prevSlide);
-nextButton.addEventListener("click", nextSlide);
-
-// Iniciar o carousel automaticamente
-setInterval(autoSlide, 4000);
+updateCarousel(currentIndex);
+startAutoSlide();

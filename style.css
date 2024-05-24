@@ -92,7 +92,7 @@ footer {
   line-height: 1.7;
 }
 /* CAROULSEL CONTAINER */
-.car-container {
+/* .car-container {
   position: relative;
   overflow: hidden;
   width: 960px;
@@ -127,7 +127,7 @@ footer {
   text-align: center;
 }
 /* CAROULSEL SLIDE  */
-.car-slide {
+/* .car-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -135,8 +135,8 @@ footer {
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-}
-
+} */
+/*
 .car-slide.active {
   opacity: 1;
 }
@@ -155,13 +155,12 @@ footer {
   display: flex;
   gap: 10px;
   margin-bottom: 96px;
-  /* z-index: 10; */
+
 }
 
 .indicator {
   width: 10px;
   height: 10px;
-  /* margin: 0 5px; */
   border-radius: 50%;
   background-color: #ccc;
   cursor: pointer;
@@ -207,7 +206,8 @@ footer {
 .prev-button:focus,
 .next-button:focus {
   outline: 2px solid #fff;
-}
+}*/
+
 /* ITEMS  */
 .items {
   border-radius: 20px;

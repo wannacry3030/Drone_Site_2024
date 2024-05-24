@@ -282,3 +282,23 @@ h3 {
   grid-column: 2;
   display: none;
 }
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.hidden-box ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.open {
+  border-top: 4px solid #087f5b;
+}
+.open .hidden-box {
+  display: block;
+}
+.open .number,
+.open .text {
+  color: #087f5b;
+}

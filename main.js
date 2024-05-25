@@ -1,8 +1,8 @@
 const images = [
+  "assets/farmer.png",
+  "assets/photo.png",
   "assets/maria.jpg",
-  "assets/maria.jpg",
-  "assets/maria.jpg",
-  "assets/maria.jpg",
+  "assets/engi.png",
 ];
 const testimonials = [
   {

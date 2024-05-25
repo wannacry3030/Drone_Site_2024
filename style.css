@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #001f3f;
+  --color-primary: #202020;
   --color-secondary: #e0e0e0;
   --color-hover: #969696;
   --font-size-large: 40px;
@@ -16,7 +16,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: var(--color-primary);
-  border-bottom: 8px solid #969696;
+  border-bottom: 8px solid var(--color-hover);
   background: var(--color-secondary);
 }
 
@@ -84,7 +84,7 @@ nav .container {
 }
 
 .nav-item a {
-  color: #001f3f;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ h3 {
 }
 
 .number {
-  color: #a1a1a1;
+  color: var(--color-hover);
 }
 
 .icon {

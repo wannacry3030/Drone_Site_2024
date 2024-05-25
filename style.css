@@ -55,7 +55,45 @@ footer {
   font-size: 14px;
   color: var(--color-primary);
 }
+/* Navegação */
+nav {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Fundo semitransparente para a navegação */
+  position: fixed; /* Fixa a navegação no topo da página */
+  width: 100%;
+  z-index: 1000; /* Garante que a navegação esteja sempre no topo */
+  padding: 10px 0;
+}
 
+nav .container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-item a {
+  color: #001f3f;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #c7c7c7; /* Cor de destaque ao passar o mouse */
+}
 /* HEADER */
 .container {
   width: 960px;

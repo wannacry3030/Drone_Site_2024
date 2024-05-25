@@ -6,24 +6,24 @@ const images = [
 ];
 const testimonials = [
   {
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis nemo at numquam aperiam commodi inventore doloremque, deserunt deleniti ipsam.",
-    author: "Maria de Almeida",
-    job: "Senior Product Manager at EDP Comercial",
+    text: "Nossa empresa decidiu usar os drones desta empresa para monitorar nossas operações agrícolas e ficamos extremamente satisfeitos com a qualidade e precisão dos resultados. Recomendamos fortemente!",
+    author: "Luiza Santos",
+    job: "CEO at AgroTech Solutions",
   },
   {
-    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-    author: "João da Silva",
-    job: "Software Engineer at ABC Tech",
+    text: "Como fotógrafo profissional, confio nos drones desta empresa para capturar imagens aéreas incríveis dos meus clientes. São fáceis de usar e produzem resultados impressionantes!",
+    author: "Pedro Oliveira",
+    job: "Owner of Oliveira Photography",
   },
   {
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-    author: "Ana Pereira",
-    job: "Graphic Designer at XYZ Studio",
+    text: "A logística da nossa empresa melhorou consideravelmente desde que começamos a utilizar os drones daqui. Eles nos ajudam a monitorar estoques e fazer entregas mais rápidas e eficientes.",
+    author: "Fernanda Costa",
+    job: "Operations Manager at Speedy Logistics",
   },
   {
-    text: "Sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
-    author: "Carlos Souza",
-    job: "Marketing Specialist at DEF Corp",
+    text: "A precisão e a estabilidade dos drones desta empresa são incomparáveis. Como engenheiro civil, confio neles para inspecionar locais de construção e obter dados precisos para nossos projetos.",
+    author: "Rafael Silva",
+    job: "Civil Engineer at BuildTech",
   },
 ];
 

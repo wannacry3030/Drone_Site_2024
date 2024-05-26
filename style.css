@@ -37,7 +37,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 64px;
+  /* margin-top: 64px; */
 }
 
 header,
@@ -106,7 +106,6 @@ header {
   color: white; /* Cor do texto para contraste */
   text-align: center; /* Centraliza o texto */
   padding: 0 20px; /* Adiciona algum padding para evitar que o texto encoste nas bordas */
-  /* border-radius: 20px; */
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }

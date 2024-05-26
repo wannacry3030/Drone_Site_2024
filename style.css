@@ -56,6 +56,13 @@ footer {
   font-size: 14px;
   color: var(--color-primary);
 }
+/* LOGO  */
+.logo img {
+  height: 40px;
+}
+.logo {
+  margin-right: auto;
+}
 /* Navegação */
 nav {
   background-color: #333;

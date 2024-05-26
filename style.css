@@ -200,7 +200,7 @@ header {
 .carousel {
   background-color: var(--color-secondary);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  width: 800px;
+  /* width: 800px; */
   margin: 100px auto;
   border-radius: 8px;
   padding: 32px 48px 32px 86px;

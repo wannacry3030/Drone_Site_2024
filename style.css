@@ -396,19 +396,124 @@ h3 {
 .open .text {
   color: var(--color-primary);
 }
+.hamburger-icon {
+  display: none; /* Oculta o ícone em telas maiores */
+}
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  /* Adicione aqui os estilos específicos para dispositivos com largura de tela até 768 pixels */
+  .container {
+    width: 85%; /* Ajuste a largura do container conforme necessário */
+  }
+
   header {
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+    height: 70vh; /* Ajuste a altura do cabeçalho para dispositivos móveis */
+  }
+
+  .caixa-header {
+    padding: 20px; /* Reduza o padding para dispositivos móveis */
   }
 
   .carousel {
-    width: 100%;
-    padding: 16px;
+    flex-direction: column; /* Altere a direção do flex para exibir o conteúdo do carrossel verticalmente */
+    padding: 32px; /* Reduza o padding para dispositivos móveis */
   }
 
+  .carousel-image {
+    height: auto; /* Permita que a altura da imagem se ajuste automaticamente para dispositivos móveis */
+    width: 100%; /* Ajuste a largura da imagem para preencher a largura do contêiner */
+    transform: none; /* Resetar a transformação da imagem */
+    margin-bottom: 20px; /* Ajuste o espaçamento inferior da imagem */
+  }
   .grid-3-cols {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* column-gap: 80px; */
+  }
+  .items {
+    border-radius: 24px;
+    background: var(--color-secondary);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    margin-top: 20px;
+  }
+  .prodts {
+    margin-top: 44px;
+  }
+  /* Esconder a navegação regular e exibir o menu hamburguer */
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .hamburger-icon {
+    display: block; /* Mostra o ícone apenas em telas menores */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Exibir a navegação em lista quando o menu hamburguer estiver ativado */
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adicione aqui os estilos específicos para dispositivos com largura de tela até 480 pixels */
+  header {
+    height: 50vh; /* Ajuste a altura do cabeçalho para dispositivos móveis menores */
+  }
+
+  .caixa-header h1 {
+    font-size: 2rem; /* Reduza o tamanho da fonte do título para dispositivos móveis menores */
+  }
+
+  .caixa-header .texto-header {
+    font-size: 1rem; /* Reduza o tamanho da fonte do texto para dispositivos móveis menores */
   }
 }

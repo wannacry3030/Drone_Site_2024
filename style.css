@@ -147,8 +147,8 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 100px;
-  padding: 16px 32px;
-  font-size: 1rem;
+  /* padding: 16px 32px; */
+  /* font-size: 1rem; */
   transition: background-color 0.3s ease;
 }
 .btn1:hover,
@@ -515,5 +515,9 @@ h3 {
 
   .caixa-header .texto-header {
     font-size: 1rem; /* Reduza o tamanho da fonte do texto para dispositivos móveis menores */
+  }
+  .btn--grande {
+    padding: 8px 16px;
+    font-size: 1rem;
   }
 }

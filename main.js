@@ -6,22 +6,22 @@ const images = [
 ];
 const testimonials = [
   {
-    text: "Nossa empresa decidiu usar os drones desta empresa para monitorar nossas operações agrícolas e ficamos extremamente satisfeitos com a qualidade e precisão dos resultados. Recomendamos fortemente!",
+    text: "Nossa empresa decidiu usar os drones .FLY para monitorar nossas operações agrícolas e ficamos extremamente satisfeitos com a qualidade e precisão dos resultados. Recomendamos fortemente!",
     author: "Luiza Santos",
     job: "CEO at AgroTech Solutions",
   },
   {
-    text: "Como fotógrafo profissional, confio nos drones desta empresa para capturar imagens aéreas incríveis dos meus clientes. São fáceis de usar e produzem resultados impressionantes!",
+    text: "Como fotógrafo profissional, confio nos drones da .FLY para capturar imagens aéreas incríveis dos meus clientes. São fáceis de usar e produzem resultados impressionantes!",
     author: "Pedro Oliveira",
     job: "Owner of Oliveira Photography",
   },
   {
-    text: "A logística da nossa empresa melhorou consideravelmente desde que começamos a utilizar os drones daqui. Eles nos ajudam a monitorar estoques e fazer entregas mais rápidas e eficientes.",
+    text: "A logística da nossa empresa melhorou consideravelmente desde que começamos a utilizar os drones. Eles nos ajudam a monitorar estoques e fazer entregas mais rápidas e eficientes.",
     author: "Fernanda Costa",
     job: "Operations Manager at Speedy Logistics",
   },
   {
-    text: "A precisão e a estabilidade dos drones desta empresa são incomparáveis. Como engenheiro civil, confio neles para inspecionar locais de construção e obter dados precisos para nossos projetos.",
+    text: "A precisão e a estabilidade dos drones são incomparáveis. Como engenheiro civil, confio neles para inspecionar locais de construção e obter dados precisos para nossos projetos.",
     author: "Rafael Silva",
     job: "Civil Engineer at BuildTech",
   },

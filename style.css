@@ -62,6 +62,7 @@ footer {
 }
 .logo {
   margin-right: auto;
+  cursor: pointer;
 }
 /* Navegação */
 nav {

@@ -71,13 +71,8 @@ footer {
 
 /* Navegação */
 nav {
-  background-color: #333;
-  position: fixed; /* Adiciona a propriedade position */
-  width: 65%; /* Define a largura para ocupar toda a largura da tela */
-  top: 0; /* Fixa a navegação no topo da tela */
-  z-index: 10; /* Garante que a navegação esteja acima de outros elementos */
+  width: 100%; /* Define a largura para ocupar toda a largura da tela em dispositivos móveis */
 }
-
 nav .container {
   display: flex;
   justify-content: space-between; /* Ajusta o alinhamento para space-between */
@@ -524,7 +519,13 @@ h3 {
     right: 0;
     width: 100%;
   }
-
+  nav {
+    background-color: #333;
+    position: fixed; /* Adiciona a propriedade position */
+    width: 85%;
+    top: 0; /* Fixa a navegação no topo da tela */
+    z-index: 10; /* Garante que a navegação esteja acima de outros elementos */
+  }
   .nav-item {
     margin: 10px 0;
   }

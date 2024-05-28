@@ -6,6 +6,9 @@
   --font-size-medium: 36px;
   --font-size-small: 18px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -393,23 +396,17 @@ h3 {
 }
 
 /* FAQs */
-.faqs {
-  padding: 0 20px;
-  border-radius: 12px;
-  background: var(--color-secondary);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-}
 
+/* ACCORDION */
 .accordion {
-  border-radius: 20px;
-  background: var(--color-secondary);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  padding: 24px;
+  line-height: 1;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.question {
-  font-size: 24px;
-  font-weight: 500;
+.item {
   border-radius: 20px;
   background: var(--color-secondary);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
@@ -466,7 +463,6 @@ h3 {
 .open .text {
   color: var(--color-primary);
 }
-
 /* HAMBURGER MENU */
 .hamburger-menu {
   display: none; /* Oculta o ícone em telas maiores */
@@ -532,7 +528,7 @@ h3 {
   .hamburger-menu .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(66, 66, 66);
     margin: 5px;
     transition: 0.4s;
   }

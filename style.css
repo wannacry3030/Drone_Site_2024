@@ -56,6 +56,7 @@ footer {
   font-size: 14px;
   color: var(--color-primary);
 }
+
 /* LOGO  */
 .logo img {
   height: 40px;
@@ -64,6 +65,7 @@ footer {
   margin-right: auto;
   cursor: pointer;
 }
+
 /* Navegação */
 nav {
   background-color: #333;
@@ -72,6 +74,8 @@ nav {
 nav .container {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  z-index: 10; /* Garante que a navegação esteja acima do cabeçalho */
 }
 
 .nav-list {
@@ -97,11 +101,13 @@ nav .container {
   background-color: #575757;
   border-radius: 4px;
 }
+
 /* HEADER */
 .container {
   width: 65%;
   margin: 0 auto;
 }
+
 header {
   background-image: url("assets/OR.jpg");
   background-size: cover;
@@ -117,6 +123,7 @@ header {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
 .caixa-header {
   background: rgba(
     0,
@@ -128,17 +135,20 @@ header {
   border-radius: 12px;
   max-width: 800px; /* Limita a largura máxima do texto para uma melhor legibilidade */
 }
+
 .caixa-header h1 {
   font-size: 2.5rem; /* Ajuste o tamanho da fonte do título */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto para melhorar a legibilidade */
 }
+
 .caixa-header .texto-header {
   margin-bottom: 24px;
   font-size: 1.25rem; /* Ajuste o tamanho da fonte do texto */
   line-height: 1.6;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra no texto para melhorar a legibilidade */
 }
+
 .btn1:link,
 .btn1:visited {
   background-color: #c7c7c7;
@@ -151,22 +161,27 @@ header {
   /* font-size: 1rem; */
   transition: background-color 0.3s ease;
 }
+
 .btn1:hover,
 .btn1:active {
   background-color: var(--color-hover);
 }
+
 /* Adicionando estilos adicionais aos botões para melhor aparência */
 .btn1 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra nos botões */
 }
+
 .btn--grande {
   padding: 16px 32px;
   font-size: var(--font-size-small);
 }
+
 .btn--small {
   font-size: 14px;
   padding: 8px 12px;
 }
+
 /* FEATURES */
 .grid-3-cols {
   display: grid;
@@ -396,6 +411,8 @@ h3 {
 .open .text {
   color: var(--color-primary);
 }
+
+/* HAMBURGER MENU */
 .hamburger-icon {
   display: none; /* Oculta o ícone em telas maiores */
 }
@@ -425,21 +442,25 @@ h3 {
     transform: none; /* Resetar a transformação da imagem */
     margin-bottom: 20px; /* Ajuste o espaçamento inferior da imagem */
   }
+
   .grid-3-cols {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* column-gap: 80px; */
   }
+
   .items {
     border-radius: 24px;
     background: var(--color-secondary);
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     margin-top: 20px;
   }
+
   .prodts {
     margin-top: 44px;
   }
-  /* Esconder a navegação regular e exibir o menu hamburguer */
+
+  /* Esconder a navegação regular e exibir o menu hambúrguer */
   .nav-list {
     display: none;
   }
@@ -452,6 +473,7 @@ h3 {
     cursor: pointer;
     z-index: 9999;
   }
+
   .hamburger-icon {
     display: block; /* Mostra o ícone apenas em telas menores */
     position: absolute;
@@ -480,7 +502,7 @@ h3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  /* Exibir a navegação em lista quando o menu hamburguer estiver ativado */
+  /* Exibir a navegação em lista quando o menu hambúrguer estiver ativado */
   .nav-list.active {
     display: flex;
     flex-direction: column;
@@ -516,6 +538,7 @@ h3 {
   .caixa-header .texto-header {
     font-size: 1rem; /* Reduza o tamanho da fonte do texto para dispositivos móveis menores */
   }
+
   .btn--grande {
     padding: 8px 16px;
     font-size: 1rem;

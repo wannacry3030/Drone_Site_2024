@@ -83,6 +83,7 @@ nav .container {
 
 .nav-list {
   list-style-type: none;
+  background-color: #202020;
   display: flex; /* Garante a exibição em fila */
   padding: 0;
   margin: 0;
